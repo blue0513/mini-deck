@@ -17,7 +17,6 @@ app.on('ready', function() {
     height: 200,
     x: 0,
     y: 0,
-    // opacity: 0.5,
     movable: true,
     frame: false,
     resizable: true,
@@ -25,7 +24,7 @@ app.on('ready', function() {
     alwaysOnTop: true,
     titleBarStyle: 'customButtonOnHover',
     webPreferences: {
-      // nodeIntegration: true,
+      nodeIntegration: true,
       webviewTag: true
     }
   });
