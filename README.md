@@ -4,6 +4,8 @@ This provides always-on-top & mini TweetDeck viewer.
 
 [![Image from Gyazo](https://i.gyazo.com/a1c9e9061181e2e70902e6e15734b027.gif)](https://gyazo.com/a1c9e9061181e2e70902e6e15734b027)
 
+NOTES: currently only macOS is supported
+
 ## Releases
 
 You can download the application [here](https://github.com/blue0513/mini-deck/releases).
