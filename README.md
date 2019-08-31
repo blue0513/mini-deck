@@ -2,9 +2,13 @@
 
 This provides always-on-top & mini TweetDeck viewer.
 
+[![Image from Gyazo](https://i.gyazo.com/a1c9e9061181e2e70902e6e15734b027.gif)](https://gyazo.com/a1c9e9061181e2e70902e6e15734b027)
+
 ## Releases
 
 You can download the application [here](https://github.com/blue0513/mini-deck/releases).
+
++ [v0.1.0](https://github.com/blue0513/mini-deck/releases/tag/0.1.0): Application distribution for macOS
 
 ## Features
 
@@ -37,7 +41,7 @@ Just start the app.
 2. In `./dist/mac`, you can find `mini-deck.app`
 3. Double click `mini-deck.app` and start the app
 
-### Build for Windows
+### WIP: Build for Windows
 
 1. Run `node build/build-win.js`
 2. In `./dist/`, you can find `mini-deck Setup.exe`
