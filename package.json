@@ -1,16 +1,22 @@
 {
   "name": "mini-deck",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "start": "electron .",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
   },
-  "author": "",
-  "license": "ISC",
+  "Dependencies": {},
   "devDependencies": {
-    "electron": "^6.0.5",
-    "electron-builder": "^21.2.0"
+    "electron": "^21.2.3",
+    "electron-builder": "^22.14.13",
+    "prettier": "2.7.1"
+  },
+  "build": {
+    "appId": "dumyId",
+    "mac": {
+      "category": "dummyCategory"
+    }
   }
 }

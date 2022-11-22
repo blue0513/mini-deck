@@ -1,36 +1,25 @@
-'use strict';
+const { app, BrowserView, BrowserWindow } = require("electron");
+const width = 800;
+const height = 600;
 
-const electron = require('electron');
-const app = electron.app;
-const BrowserWindow = electron.BrowserWindow;
-let mainWindow;
+app.whenReady().then(() => {
+  const win = new BrowserWindow({
+    width,
+    height,
+    alwaysOnTop: true,
+    hasShadow: false,
+    titleBarStyle: "hidden",
+  });
+  const view = new BrowserView();
 
-app.on('window-all-closed', function() {
-  if (process.platform != 'darwin') {
-    app.quit();
-  }
-});
-
-app.on('ready', function() {
-  mainWindow = new BrowserWindow({
-    width: 400,
-    height: 200,
+  win.setBrowserView(view);
+  view.setBounds({
     x: 0,
     y: 0,
-    movable: true,
-    frame: false,
-    resizable: true,
-    hasShadow: false,
-    alwaysOnTop: true,
-    titleBarStyle: 'customButtonOnHover',
-    webPreferences: {
-      nodeIntegration: true,
-      webviewTag: true
-    }
+    width,
+    height,
   });
-  mainWindow.loadURL('file://' + __dirname + '/index.html');
 
-  mainWindow.on('closed', function() {
-    mainWindow = null;
-  });
+  win.loadURL("file://" + __dirname + "/index.html");
+  view.webContents.loadURL("https://tweetdeck.com");
 });
