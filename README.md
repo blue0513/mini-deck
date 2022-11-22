@@ -10,14 +10,14 @@ NOTES: currently only macOS is supported
 
 You can download the application [here](https://github.com/blue0513/mini-deck/releases).
 
-+ [v0.1.0](https://github.com/blue0513/mini-deck/releases/tag/0.1.0): Application distribution for macOS
+- [v0.1.0](https://github.com/blue0513/mini-deck/releases/tag/0.1.0): Application distribution for macOS
 
 ## Features
 
-+ Mini-size & frame-less window
-+ Always on top
-+ Resizable, movable, Zoomable
-+ Usability as usual
+- Mini-size & frame-less window
+- Always on top
+- Resizable, movable, Zoomable
+- Usability as usual
 
 ## Usage
 
@@ -32,8 +32,8 @@ Just start the app.
 
 ## Development Requirements
 
-+ Twitter Account
-+ Electron: `v6.x` or above
+- Twitter Account
+- Electron: `v6.x` or above
 
 ## Build as Application
 
