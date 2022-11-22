@@ -19,7 +19,11 @@ app.whenReady().then(() => {
     width,
     height,
   });
-
-  win.loadURL("file://" + __dirname + "/index.html");
+  view.setAutoResize({
+    width: true,
+    height: true,
+    horizontal: true,
+    vertical: true,
+  });
   view.webContents.loadURL("https://tweetdeck.com");
 });
