@@ -6,12 +6,6 @@ This provides always-on-top & mini TweetDeck viewer.
 
 NOTES: currently only macOS is supported
 
-## Releases
-
-You can download the application [here](https://github.com/blue0513/mini-deck/releases).
-
-- [v0.1.0](https://github.com/blue0513/mini-deck/releases/tag/0.1.0): Application distribution for macOS
-
 ## Features
 
 - Mini-size & frame-less window
@@ -39,7 +33,7 @@ Just start the app.
 ### Build for Mac
 
 1. Run `npm run dist`
-2. In `./dist/mac`, you can find the application
+2. In `./dist`, you can find the application
 
 ## Contribute
 
