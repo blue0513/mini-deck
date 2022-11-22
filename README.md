@@ -17,7 +17,6 @@ You can download the application [here](https://github.com/blue0513/mini-deck/re
 - Mini-size & frame-less window
 - Always on top
 - Resizable, movable, Zoomable
-- Usability as usual
 
 ## Usage
 
@@ -33,21 +32,14 @@ Just start the app.
 ## Development Requirements
 
 - Twitter Account
-- Electron: `v6.x` or above
+- Electron
 
 ## Build as Application
 
 ### Build for Mac
 
-1. Run `node build/build-mac.js`
-2. In `./dist/mac`, you can find `mini-deck.app`
-3. Double click `mini-deck.app` and start the app
-
-### WIP: Build for Windows
-
-1. Run `node build/build-win.js`
-2. In `./dist/`, you can find `mini-deck Setup.exe`
-3. Double click `mini-deck Setup.exe` and start the app
+1. Run `npm run dist`
+2. In `./dist/mac`, you can find the application
 
 ## Contribute
 
