@@ -1,5 +1,8 @@
 # Mini Deck
 
+[![CI](https://github.com/blue0513/mini-deck/actions/workflows/ci.yml/badge.svg)](https://github.com/blue0513/mini-deck/actions/workflows/ci.yml)
+![GitHub package.json dependency version (dev dep on branch)](https://img.shields.io/github/package-json/dependency-version/blue0513/mini-deck/dev/electron)
+
 This provides always-on-top & mini TweetDeck viewer.
 
 [![Image from Gyazo](https://i.gyazo.com/a1c9e9061181e2e70902e6e15734b027.gif)](https://gyazo.com/a1c9e9061181e2e70902e6e15734b027)
