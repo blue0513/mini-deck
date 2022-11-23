@@ -28,8 +28,6 @@ app.whenReady().then(() => {
 
   view.webContents.loadURL("https://tweetdeck.com");
   view.webContents.on("did-finish-load", () => {
-    view.webContents.insertCSS(
-      "body { -webkit-app-region: drag; }"
-    );
+    view.webContents.insertCSS("body { -webkit-app-region: drag; }");
   });
 });
