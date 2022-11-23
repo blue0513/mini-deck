@@ -1,6 +1,6 @@
 const { app, BrowserView, BrowserWindow } = require("electron");
-const width = 800;
-const height = 600;
+const width = 500;
+const height = 300;
 
 app.whenReady().then(() => {
   const win = new BrowserWindow({
@@ -12,7 +12,9 @@ app.whenReady().then(() => {
   });
   const view = new BrowserView();
 
+  win.setWindowButtonVisibility(false);
   win.setBrowserView(view);
+
   view.setBounds({
     x: 0,
     y: 0,
@@ -22,8 +24,12 @@ app.whenReady().then(() => {
   view.setAutoResize({
     width: true,
     height: true,
-    horizontal: true,
-    vertical: true,
   });
+
   view.webContents.loadURL("https://tweetdeck.com");
+  view.webContents.on("did-finish-load", () => {
+    view.webContents.insertCSS(
+      "body { -webkit-app-region: drag; }"
+    );
+  });
 });
