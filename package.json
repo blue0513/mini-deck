@@ -9,7 +9,7 @@
   },
   "Dependencies": {},
   "devDependencies": {
-    "electron": "^21.2.3",
+    "electron": "^22.0.0",
     "electron-builder": "^23.6.0",
     "prettier": "2.7.1"
   },
